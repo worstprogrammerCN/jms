@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/layout.css"/>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+		
+
+		
+	</head>
+	
+	<body>
+		<h3 id = "tip">请选择输入、输出地址</h3>
+		<br/>
+		<div id = "first-line">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> 预测
+				</label>
+			</div>
+			<form role="form">
+				<div class="form-group">
+					<div>
+						分类
+						<select class="form-control"> 
+							<option>请选择</option>
+							<option>全社会用电量</option> 
+							<option>分镇街用电量</option> 
+						</select>
+					</div>
+					
+				</div>
+				<div class="form-group">
+					<div>
+						年度
+						<select class="form-control"> 
+						<option>请选择</option>
+						<option>2013</option> 
+						<option>2014</option> 
+						<option>2015</option> 
+						<option>2016</option> 
+						<option>2017</option> 
+						<option>2018</option> 
+						<option>2019</option> 
+						</select>
+					</div>
+					
+				</div>
+				<div class="form-group">
+					<div>
+						时间跨度
+						<select class="form-control"> 
+						<option>请选择</option> 
+						<option>年度</option>
+						<option>半年度</option>
+						<option>季度</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<div>
+						时间段
+						<select class="form-control"> 
+						<option>请选择</option> 
+						</select>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+		
+		<br/>
+
+		<div id = "second-line">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> 精度检验
+				</label>
+			</div>
+			<form role="form">
+				<div class="form-group">
+					<div>
+						分类
+						<select class="form-control"> 
+						<option>请选择</option> 
+						<option>全社会用电量</option> 
+						<option>分镇街用电量</option> 
+						<option>副模型</option> 
+						</select>
+					</div>
+					
+				</div>
+				<div class="form-group">
+					<div>
+						年度
+						<select class="form-control"> 
+						<option>请选择</option>
+						<option>2013</option> 
+						<option>2014</option> 
+						<option>2015</option> 
+						<option>2016</option> 
+						<option>2017</option> 
+						<option>2018</option> 
+						<option>2019</option> 
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<div>
+						时间跨度
+						<select class="form-control"> 
+						<option>请选择</option> 
+						<option>年度</option>
+						<option>半年度</option>
+						<option>季度</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<div>
+						时间段
+						<select class="form-control" disabled = "disabled"> 
+						<option>请选择</option> 
+						</select>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" id = "relation"> 关联性分析
+			</label>
+		</div>
+
+		<form id="myForm" enctype="multipart/form-data">
+			<input type = "submit" value = "提交选择"></input>
+		</form>
+
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
